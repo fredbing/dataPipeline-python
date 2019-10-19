@@ -11,5 +11,5 @@ The modified excel files were then converted to csv format and saved to a local 
 
 ### lambda_s3_csv_dynamo.py 
 
-This is a lambda function in python for loading the csv files to AWS DynamoDB once they are uploaded from local directory to AWS S3. For any updates (incremental changes) made to the csv files in S3, the lambda function will also made the updates available in the DynamoDB table very quickly. 
+This is a lambda function in python for loading the csv files to AWS DynamoDB once they are uploaded from local directory to AWS S3. Whenever there is an update (incremental change) of the csv files in S3, a CloudWatch event will trigger the lambda function to make the same update available at the DynamoDB table in real-time. 
 
