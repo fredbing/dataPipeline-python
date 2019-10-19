@@ -9,5 +9,7 @@ With regards to modifying the existing files, in this application there were a s
 
 The modified excel files were then converted to csv format and saved to a local directory (as a reference), and uploaded to AWS S3 with Boto3 API.
 
+### lambda_s3_csv_dynamo.py 
 
+This is a lambda function in python for loading the csv files to AWS DynamoDB once they are uploaded from local directory to AWS S3. For any updates (incremental changes) made to the csv files in S3, the lambda function will also made the updates available in the DynamoDB table very quickly. 
 
