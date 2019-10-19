@@ -46,7 +46,7 @@ def to_csv(filename):
 
 
 # The newly transformed csv files are saved to the local directory with 'csv' file extension:
-path = Path('~/MembraneTest5/')
+path = Path('~/MembraneTests/')
 
 for file in path.glob('*'):
     edit_workbook(file)
@@ -54,7 +54,7 @@ for file in path.glob('*'):
     rename(file, str(file).replace('.xlsx', '.csv'))
 
 
-# Load files to S3
+# Upload csv files to S3
 s3 = boto3.client('s3')
 bucket_name = 'bl-csv-01-2018'
 
