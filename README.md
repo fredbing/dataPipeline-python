@@ -1,4 +1,4 @@
-# datapipeline-python
+# dataPipeline-python
 Building data pipelines with python scripts. 
 
 ### excel_csv_to_s3.py 
