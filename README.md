@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 # projects I developed
 
 # datapipeline-python
 
+=======
+# dataPipeline-python
+>>>>>>> 6937e934f099a11f4d40943b137c57aa641cc7c8
 Building data pipelines with python scripts. 
 
 ### excel_csv_to_s3.py 
